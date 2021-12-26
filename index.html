@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <main>
+
+    <h1 class="hidden">Time Tracking Dashboard</h1>
+    <div class="container grid">
+
+      <!-- Begin Profile Widget -->
+
+      <section class="profile">
+
+        <h2 class="hidden">Profile</h2>
+
+        <header tabindex="0" class="profile__content">
+          <img id="avatar" src="./images/WhatsApp Image 2021-11-04 at 22.27.54.jpeg" alt="avatar">
+          <p>
+            <span class="profile__title">Report for</span>
+            <span class="profile__name">Ali Huseynzade</span>
+          </p>
+        </header>
+
+        <section tabindex="0" class="profile__period">
+
+          <h3 class="hidden">Timeframes</h3>
+          <span tabindex="0" class="active period" data-period="daily">
+            Daily
+          </span>
+          <span tabindex="0" class="period" data-period="weekly">
+            Weekly
+          </span>
+          <span tabindex="0" class="period" data-period="monthly">
+            Monthly
+          </span>
+        </section>
+      </section>
+
+      <!-- End of Profile Widget -->
+
+      <div class="result-widgets">
+
+        <!-- Begin of Work Widget -->
+
+        <div class="widget work">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Work</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentWork">2 hrs</span>
+              <span id="previousWork" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Work WIdget -->
+
+        <!-- Begin of Play Widget -->
+
+        <div class="widget play">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Play</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentPlay">0 hrs</span>
+              <span id="previousPlay" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Play WIdget -->
+
+        <!-- Begin of Study Widget -->
+
+        <div class="widget study">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Study</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentStudy">1 hrs</span>
+              <span id="previousStudy" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Study WIdget -->
+
+        <!-- Begin of Exercise Widget -->
+
+        <div class="widget exercise">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Exercise</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentExercise">0 hrs</span>
+              <span id="previousExercise" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Exercise WIdget -->
+
+        <!-- Begin of Social Widget -->
+
+        <div class="widget social">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Social</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentSocial">2 hrs</span>
+              <span id="previousSocial" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Social WIdget -->
+
+        <!-- Begin of Self-care Widget -->
+
+        <div class="widget self-care">
+          <section class="widget__content">
+            <h2 tabindex="0" class="widget__title">Self care</h2>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="">
+            <p tabindex="0" class="widget__second-line">
+              <span class="hidden">current</span>
+              <span class="widget__current" id="currentSelfCare">1 hrs</span>
+              <span id="previousSelfCare" class="widget__previous"></span>
+            </p>
+          </section>
+        </div>
+
+        <!-- End of Self-care WIdget -->
+
+      </div>
+
+      <!-- End of result-widgets -->
+
+    </div>
+
+    <!-- End of container -->
+
+  </main>
+
+<script src="./sciript.js"></script>
+
+</body>
+</html>
+
+
+
